@@ -1,12 +1,45 @@
-*{
+
+
+body{
+    background-color: #ccc;
+    display: flex;
+    flex-direction: column;
     height: 100%;
     width: 100%;
 }
+
 
 nav{
     display: flex;
     height: 3em;
     align-items: center;
     padding-top: 0.5em;
+    background-color: #f0a150;
+    margin-bottom: 20px;
   
+}
+
+main{
+    display: flex;
+    flex:1;
+    margin:3px 0 3px 0;
+    
+   
+}
+
+#secondContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.leftsidebar{
+    display: flex;
+}
+
+.main{
+    display:flex
+}
+
+.rightsidebar{
+    display: flex;
 }
