@@ -5,6 +5,10 @@ Menu.addEventListener("click",() =>{
     Submenu.classList.toggle("hide");
 });
 
+function text(){
+    document.getElementById("text-container").firstElementChild.innerHTML.style.color = "red"
+}
+
 
 const p = document.createElement("p");
 document.body.appendChild(p);
@@ -15,8 +19,8 @@ p.innerHTML =
 </p>`;
 
 function promptMethod() {
-    const input = promptMethod("Welcome to Lakay News _A Haitian Blog")
-    alert ("Hello" +input);
+    const inputPrompt = promptMethod("Welcome to Lakay News _A Haitian Blog");
+    alert ("Hello" +inputPrompt);
 }
 
 function mouseOver (){
@@ -28,58 +32,48 @@ function mouseOut (){
 }
 
 // Functionality for Form Registration
-// const register = document.querySelector("#registration");
-// const nameInput = document.querySelector("username");
-// const emailInput = document.querySelector("email");
-// const passwordInput = document.querySelector("password");
-// const passwordCheckInput = document.querySelector("passwordCheck");
+
+const Form = document.querySelector("input");
+input.addEventListener("focus",function(){
+    console.log("input focused");
+});
 
 
-// const regForm = document.getElementById("registrationForm").addEventListener("click,promptMethod");
-// function promptMethod () {
-//     const welcome = prompt("Welcome to Lakay News _A Haitian Blog");
-//     alert (welcome);
-// }
+const register = document.querySelector("#button");
+const nameInput = document.querySelector("username");
+const emailInput = document.querySelector("email");
+const passwordInput = document.querySelector("password");
+const passwordCheckInput = document.querySelector("passwordCheck");
+
+const isValid = function (validateInputs) {
+    for (let i = 0; i <isValid.length; i++) {
+      if (validateInputs[i].value === "") {
+        alert("Please Fill out Each Field");
+        return;
+      }
+    }
+};
+
+const validateInputs = () => {
+    const nameInput = username.value.trim();
+    const emailInput = email.value.trim();
+    const passwordInput = password.value.trim();
+    const passwordCheckInput = passwordCheck.value.trim();
 
 
-// regForm.addEventListener("submit",(e) =>{
-//     e.preventDefault();
+    if(passwordInput !== passwordCheckInput){
+        alert("Please Verify your password")
+        passwordInput.focus()
+        return false;
+    }
+    if (passwordInput === ""){
+        alert ("Please fill the field")
+        passwordInput.focus()
+        return false;
+    }
+    return true;
+}
 
-//     validateInputs();
-// });
-
-// const validateInputs = () => {
-//     const nameInput = username.value.trim();
-//     const emailInput = email.value.trim();
-//     const passwordInput = password.value.trim();
-//     const passwordCheckInput = passwordCheck.value.trim();
-
-
-//     if(passwordInput !== passwordCheckInput){
-//         alert("Please Verify your password")
-//     }
-// }
-
-
-// const isValid = function (register) {
-//     for (let i = 0; i < register.length; i++) {
-//       if (register[i].value === "") {
-//         alert("Please Fill out Each Field");
-//         return;
-//       }
-//     }
-// };
-
-// // const Form = document.querySelector("input");
-// // input.addEventListener("focus",function(){
-// //     console.log("input focused");
-// // });
-
-// // button.addEventListener("submit",(e){
-// //     e.preventDefault()
-// // });
-
-  
 
 
 

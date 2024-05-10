@@ -1,23 +1,55 @@
 
 
 body{
-    background-color: #ccc;
+    background-color: rgb(107, 107, 248);
     display: flex;
     flex-direction: column;
     height: 100%;
     width: 100%;
 }
 
+.logo{
+    display: flex;
+    float: inline-start;
+    width: 100%;
+    height: 40px;
+    
+}
+
 
 nav{
     display: flex;
-    height: 3em;
+    height: 40px;
     align-items: center;
-    padding-top: 0.5em;
-    background-color: #f0a150;
+    padding-top: 1px;
+    background-color: #dfbeb8;
     margin-bottom: 20px;
   
 }
+
+.sub-menu{
+    display: flex;
+   
+    
+}
+a{
+    display: block;
+    padding: 10px;
+    text-align: left;
+    margin-right: 3px;
+}
+
+.head{
+    text-align: center;
+}
+
+.maincontainer{
+    display: flex;
+    flex-direction: row;
+    /* height: 100px; */
+    margin-bottom: 30%;
+}
+
 
 main{
     display: flex;
@@ -27,19 +59,12 @@ main{
    
 }
 
-#secondContainer{
-    display: flex;
-    flex-direction: row;
+
+#registration input{
+    text-align: center;
 }
 
-.leftsidebar{
-    display: flex;
-}
-
-.main{
-    display:flex
-}
-
-.rightsidebar{
-    display: flex;
+#button{
+    margin-top: 5px;
+    align-content: center;
 }

@@ -17,7 +17,7 @@
     <header>
         <nav id="navContainer">
             <div class ="logo">
-                <a href=""></a>
+                <img src="Images\Logo_Haiti-removebg-preview.png" alt="logoHaiti">
             </div>
             <div class="menu">
                 <span class="line"></span>
@@ -32,46 +32,44 @@
         </nav>
     </header>
 
-    <div class="container1">
-        <div class="head"> 
-            <h1 id="heading" onmouseover="mouseOver()" onmouseout="mouseOut()">
-                Lakay News
-            </h1>
-            <h3>Blog</h3>
+    
+    <div class="head"> 
+        <h1 id="heading" onmouseover="mouseOver()" onmouseout="mouseOut()">
+            Lakay News
+        </h1>
+        <h3>Blog</h3>
 
-        </div>
-        <div class="container2">
-            <div class="Carousel"></div>
-            <div class="Description"></div>
-        </div>
     </div>
+       
+   
     
     <div class="main-container">
-        
-        <h1>Register</h1>
-        <p>Please provide your information below.</p>
-        <hr>
 
         <div class="form-container">
+            <h1>Register</h1>
+            <p>Please provide your information below.</p>
+          <hr>
             <form id="registration">
-            <input name="username" type="text" placeholder="Enter Your Username" required />
-            <br>
-            <input name="email" type="text" placeholder="Enter Your Email" />
-            <br>
-            <input name="password" type="text" placeholder="Enter Your Password" />
-            <br>
-            <input name="passwordCheck" type="text" placeholder="Re-enter Your Password"  />
-            <br>
-            <!-- <button id="registrationForm" onclick="promptMethod">Register</button> -->
-            <input type="button" value="Register" onclick="promptMethod">
+                <input name="username" type="text" placeholder="Enter Your Username" required />
+                <br>
+                <input name="email" type="text" placeholder="Enter Your Email" required />
+                <br>
+                <input name="password" type="text" placeholder="Enter Your Password" required/>
+                <br>
+                <input name="passwordCheck" type="text" placeholder="Re-enter Your Password" required />
+                <br>
+               
         
             </form>
+            <input type="button" value="Register" onclick="promptMethod" id="button">
         </div>
-        <div class="text-container">
+
+        <div id="text-container">
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>
                 Consequatur voluptatibus neque earum, <br>
                 assumenda aut expedita maiores doloremque laudantium architecto veritatis asperiores ut <br>
-                 maxime sapiente saepe quisquam quibusdam laboriosam eos quidem!</p>
+                 maxime sapiente saepe quisquam quibusdam laboriosam eos quidem!
+            </p>
         </div>
       
   </div>
