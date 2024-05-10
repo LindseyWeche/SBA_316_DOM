@@ -14,7 +14,18 @@ p.innerHTML =
   <a> <ahref="mailto:lindseyhaishanw22@icloud.com">lindseyhaishanw22@icloud.com</a>
 </p>`;
 
+function promptMethod() {
+    const input = promptMethod("Welcome to Lakay News _A Haitian Blog")
+    alert ("Hello" +input);
+}
 
+function mouseOver (){
+document.getElementById("heading").style.color = "red";
+}
+
+function mouseOut (){
+    document.getElementById("heading").style.color = "black";
+}
 
 // Functionality for Form Registration
 // const register = document.querySelector("#registration");
