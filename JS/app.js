@@ -1,29 +1,34 @@
-const Menu = document.querySelectorAll(".menu");
+const Menu = document.querySelector(".menu");
 const Submenu = document.querySelector(".sub-menu");
 
-Menu.addEventListener("click",(e) =>{
+Menu.addEventListener("click",() =>{
     Submenu.classList.toggle("hide");
 });
 
-const mainContent = (c) => document.createElement(c);
-const Footer = document.getElementById("bottom");
 
-
-const para = Footer.appendChild(mainContent("bottom"));
-para.innerHTML = 
+const p = document.createElement("p");
+document.body.appendChild(p);
+p.innerHTML =
 `<p> &copy;Author: Lindsey Weche</p>
 <p>
-  <ahref="mailto:lindseyhaishanw22@icloud.com">lindseyhaishanw22@icloud.com</a>
+  <a> <ahref="mailto:lindseyhaishanw22@icloud.com">lindseyhaishanw22@icloud.com</a>
 </p>`;
 
 
-// // Functionality for About Page
+
+// Functionality for Form Registration
 // const register = document.querySelector("#registration");
 // const nameInput = document.querySelector("username");
 // const emailInput = document.querySelector("email");
 // const passwordInput = document.querySelector("password");
 // const passwordCheckInput = document.querySelector("passwordCheck");
-// const regForm = document.getElementById("registrationForm")
+
+
+// const regForm = document.getElementById("registrationForm").addEventListener("click,promptMethod");
+// function promptMethod () {
+//     const welcome = prompt("Welcome to Lakay News _A Haitian Blog");
+//     alert (welcome);
+// }
 
 
 // regForm.addEventListener("submit",(e) =>{
